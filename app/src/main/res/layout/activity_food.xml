@@ -15,6 +15,8 @@
         android:layout_below="@+id/toolbar_title"
         android:layout_margin="20dp"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:endIconDrawable="@drawable/ic_baseline_filter_alt_24"
+        app:endIconMode="custom"
         app:startIconDrawable="@drawable/ic_baseline_search_24"
         android:hint="Search"
         >
@@ -34,16 +36,16 @@
                 android:orientation="horizontal">
 
                 <androidx.cardview.widget.CardView
-                    android:layout_width="50dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_gravity="center_vertical"
                     android:elevation="4dp"
                     android:backgroundTint="#D7E0E4"
-                    app:cardCornerRadius="60dp"
-                    android:layout_marginLeft="20dp">
+                    app:cardCornerRadius="25dp">
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="5dp"
                         android:text="All"
                         android:fontFamily="@font/reguler"
                         android:textSize="16dp"
